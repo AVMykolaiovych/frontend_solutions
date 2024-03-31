@@ -2,11 +2,33 @@
 
 $accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
+$textcolor: #303651 // Text Color
+$bgColor: #C7D2DC // Background Color
 $lineheight: 1.65 // Document Line Height
 $userfont: roboto-oh5, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
-	
+
+:root
+	--primary-color: #272727
+	--text: white
+	--sidebar-primary: #605DFF
+	--sidebar-primary-light: #5DA8FF
+	--sidebar-primary-hover: #605DFF10
+	--sidebar-background: #FCFCFD
+	--background: #F1F3FF
+	--text-link: #424662
+	--headline: #7686BC
+	--cta-background: #EBF3FF
+	--cta-background-darker: #CFD5FF
+	--cta-background-border: #CDD2F3
+	--cta-text: #1C2035
+	--neutral: #E6E8F0
+	--expand-button: #4A516D
+	--logout: #FA7575
+	--text: #{$textcolor}
+	--text-lighter: #697089
+	--white: white
+
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 30px
 $gutter: $grid-gutter-width
@@ -33,6 +55,10 @@ $gutter: $grid-gutter-width
 @include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
 
 // GENERAL CSS SETTINGS
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
 
 ::placeholder
 	color: #666
@@ -48,6 +74,11 @@ input, textarea
 	&:required:valid
 		border-color: green
 
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+
 body
 	font-family: $userfont
 	font-size: $fontsize
@@ -56,3 +87,6 @@ body
 	min-width: 320px
 	position: relative
 	overflow-x: hidden
+	background-color: $bgColor
+	padding: 16px
+	// font-family: 'Work Sans', sans-serif
