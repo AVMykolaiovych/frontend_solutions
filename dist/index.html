@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
-        <!-- <base href="/"> -->
+        <base href="/">
 
         <title>Frontend Solutions</title>
         <meta name="description" content="Frontend Solutions" />
@@ -18,7 +19,104 @@
         <link rel="stylesheet" href="css/app.min.css" />
     </head>
 
-    <body>
-        <script src="js/app.min.js"></script>
-    </body>
+<body>
+
+
+<aside>
+    <nav class="sidebar">
+        <div class="sidebar-top-wrapper">
+            <div class="sidebar-top">
+                <a href="#" class="logo__wrapper">
+                    <img
+                        src="assets/storeify.png"
+                        alt="Logo"
+                        class="logo-small"
+                    />
+                    <span class="hide">WebDev</span>
+                </a>
+            </div>
+            <div class="expand-btn">
+                <!-- svg icon -->
+            </div>
+        </div>
+
+        <div class="search__wrapper">
+            <!-- svg icon -->
+            <input type="search" placeholder="Search for anything..." />
+        </div>
+        <div class="sidebar-links">
+            <h2>Main</h2>
+            <ul>
+                <li>
+                    <a href="#home" title="Home" class="tooltip">
+                        <!-- svg icon -->
+                        <span class="link hide">Home</span>
+                        <span class="tooltip__content">Home</span>
+                    </a>
+                </li>
+                <!-- more links -->
+            </ul>
+        </div>
+        <div class="sidebar-links">
+            <h2>Communication</h2>
+            <ul>
+                <li>
+                    <a
+                        href="#communication"
+                        title="Communication"
+                        class="tooltip"
+                    >
+                        <!-- svg icon -->
+                        <span class="link hide">Communication</span>
+                        <span class="tooltip__content">Communication</span>
+                    </a>
+                </li>
+                <!-- more links -->
+            </ul>
+        </div>
+        <div class="sidebar__action__wrapper">
+            <div class="sidebar__action">
+                <div class="progress-bar">
+                    <div class="progress-bar__value">60%</div>
+                </div>
+                <h2>Used Capacity</h2>
+                <p>You are already using 60% of your capacity.</p>
+                <button>Upgrade plan</button>
+            </div>
+        </div>
+        <div class="sidebar-links bottom-links">
+            <ul>
+                <li>
+                    <a href="#settings" title="Settings" class="tooltip">
+                        <!-- svg icon -->
+                        <span class="link hide">Settings</span>
+                        <span class="tooltip__content">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="divider"></div>
+        <div class="sidebar__profile">
+            <div class="avatar__wrapper">
+                <img
+                    src="assets/profile.png"
+                    alt="Indiana Jones Picture"
+                    class="avatar"
+                />
+                <div class="online__status"></div>
+            </div>
+            <section class="avatar__name hide">
+                <div class="user-name">Indiana Jones</div>
+                <div class="email">indiana.jones@example.com</div>
+            </section>
+            <a href="#logout" class="logout">
+                <!-- logout svg -->
+            </a>
+        </div>
+    </nav>
+</aside>
+
+	<script src="js/app.min.js"></script>
+
+</body>
 </html>
