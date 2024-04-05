@@ -8,10 +8,10 @@
                         alt="Logo"
                         class="logo-small"
                     />
-                    <span class="hide">Frontend Solutions</span>
+                    <span class="hide company-name">Frontend Solutions</span>
                 </a>
             </div>
-            <div class="expand-btn">
+            <button class="expand-btn" type="button">
                 <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -25,11 +25,12 @@
                         stroke-linejoin="round"
                     />
                 </svg>
-            </div>
+            </button>
         </div>
 
         <div class="search__wrapper">
-            <svg
+            <input type="search" />
+            <!-- <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,14 +49,12 @@
                         fill="#000000"
                     ></path>
                 </g>
-            </svg>
-            <input type="search" placeholder="Search for anything..." />
+            </svg> -->
         </div>
         <div class="sidebar-links">
-            <h2>Main</h2>
             <ul>
                 <li>
-                    <a href="#home" title="Home" class="tooltip">
+                    <a href="#dashboard" title="Dashboard" class="tooltip">
                         <svg
                             fill="#000000"
                             viewBox="0 0 32 32"
@@ -74,25 +73,17 @@
                                 ></path>
                             </g>
                         </svg>
-                        <span class="link hide">Home</span>
-                        <span class="tooltip__content">Home</span>
+                        <span class="link hide">Dashboard</span>
+                        <span class="tooltip__content">Dashboard</span>
                     </a>
                 </li>
-                <!-- more links -->
-            </ul>
-        </div>
-        <div class="sidebar-links">
-            <h2>Portfolio</h2>
-            <ul>
                 <li>
-                    <a href="portfolio.html" title="Portfolio" class="tooltip">
+                    <a href="#overview" title="Overview" class="tooltip">
                         <svg
                             fill="#000000"
-                            id="Layer_1"
+                            viewBox="0 0 32 32"
+                            version="1.1"
                             xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 0 511.999 511.999"
-                            xml:space="preserve"
                         >
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                             <g
@@ -101,23 +92,142 @@
                                 stroke-linejoin="round"
                             ></g>
                             <g id="SVGRepo_iconCarrier">
-                                <g>
-                                    <g>
-                                        <path
-                                            d="M478.859,111.609H340.506V77.877c0-9.152-7.419-16.57-16.57-16.57H188.065c-9.152,0-16.57,7.419-16.57,16.57v33.731 H33.141C14.867,111.609,0,126.476,0,144.75v65.016c0,11.835,6.34,22.775,16.57,28.686v195.67c0,9.152,7.419,16.57,16.57,16.57 h445.719c9.152,0,16.57-7.419,16.57-16.57V238.45c10.23-5.909,16.57-16.849,16.57-28.686v-65.016 C512,126.476,497.133,111.609,478.859,111.609z M204.636,94.447h102.729v17.161H204.636V94.447z M462.289,417.55H49.711V256.974 l153.628,85.78l6.267,3.499v13.305c0,9.152,7.419,16.57,16.57,16.57h59.65h0.001c9.152,0,16.57-7.419,16.57-16.57v-13.304 l159.893-89.28V417.55z M242.745,342.989c0-14.838,0-4.151,0-36.983h26.509v36.983H242.745z M478.859,209.765 c-8.041,4.49-168.977,94.353-176.464,98.532v-9.027c0-14.56-11.845-26.405-26.405-26.405h-39.98 c-14.56,0-26.405,11.845-26.405,26.405v9.026c-4.947-2.763-174.298-97.322-176.464-98.532V144.75h445.718V209.765z"
-                                        ></path>
-                                    </g>
-                                </g>
+                                <path
+                                    d="M31.772 16.043l-15.012-15.724c-0.189-0.197-0.449-0.307-0.721-0.307s-0.533 0.111-0.722 0.307l-15.089 15.724c-0.383 0.398-0.369 1.031 0.029 1.414 0.399 0.382 1.031 0.371 1.414-0.029l1.344-1.401v14.963c0 0.552 0.448 1 1 1h6.986c0.551 0 0.998-0.445 1-0.997l0.031-9.989h7.969v9.986c0 0.552 0.448 1 1 1h6.983c0.552 0 1-0.448 1-1v-14.968l1.343 1.407c0.197 0.204 0.459 0.308 0.722 0.308 0.249 0 0.499-0.092 0.692-0.279 0.398-0.382 0.411-1.015 0.029-1.413zM26.985 14.213v15.776h-4.983v-9.986c0-0.552-0.448-1-1-1h-9.965c-0.551 0-0.998 0.445-1 0.997l-0.031 9.989h-4.989v-15.777c0-0.082-0.013-0.162-0.032-0.239l11.055-11.52 10.982 11.507c-0.021 0.081-0.036 0.165-0.036 0.252z"
+                                ></path>
                             </g>
                         </svg>
-                        <span class="link hide">Portfolio</span>
-                        <span class="tooltip__content">Portfolio</span>
+                        <span class="link hide">Market Overview</span>
+                        <span class="tooltip__content">Market Overview</span>
                     </a>
                 </li>
-                <!-- more links -->
+                <li>
+                    <a href="#analytics" title="Analytics" class="tooltip">
+                        <svg
+                            fill="#000000"
+                            viewBox="0 0 32 32"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M31.772 16.043l-15.012-15.724c-0.189-0.197-0.449-0.307-0.721-0.307s-0.533 0.111-0.722 0.307l-15.089 15.724c-0.383 0.398-0.369 1.031 0.029 1.414 0.399 0.382 1.031 0.371 1.414-0.029l1.344-1.401v14.963c0 0.552 0.448 1 1 1h6.986c0.551 0 0.998-0.445 1-0.997l0.031-9.989h7.969v9.986c0 0.552 0.448 1 1 1h6.983c0.552 0 1-0.448 1-1v-14.968l1.343 1.407c0.197 0.204 0.459 0.308 0.722 0.308 0.249 0 0.499-0.092 0.692-0.279 0.398-0.382 0.411-1.015 0.029-1.413zM26.985 14.213v15.776h-4.983v-9.986c0-0.552-0.448-1-1-1h-9.965c-0.551 0-0.998 0.445-1 0.997l-0.031 9.989h-4.989v-15.777c0-0.082-0.013-0.162-0.032-0.239l11.055-11.52 10.982 11.507c-0.021 0.081-0.036 0.165-0.036 0.252z"
+                                ></path>
+                            </g>
+                        </svg>
+                        <span class="link hide">Analytics</span>
+                        <span class="tooltip__content">Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#reports" title="Reports" class="tooltip">
+                        <svg
+                            fill="#000000"
+                            viewBox="0 0 32 32"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M31.772 16.043l-15.012-15.724c-0.189-0.197-0.449-0.307-0.721-0.307s-0.533 0.111-0.722 0.307l-15.089 15.724c-0.383 0.398-0.369 1.031 0.029 1.414 0.399 0.382 1.031 0.371 1.414-0.029l1.344-1.401v14.963c0 0.552 0.448 1 1 1h6.986c0.551 0 0.998-0.445 1-0.997l0.031-9.989h7.969v9.986c0 0.552 0.448 1 1 1h6.983c0.552 0 1-0.448 1-1v-14.968l1.343 1.407c0.197 0.204 0.459 0.308 0.722 0.308 0.249 0 0.499-0.092 0.692-0.279 0.398-0.382 0.411-1.015 0.029-1.413zM26.985 14.213v15.776h-4.983v-9.986c0-0.552-0.448-1-1-1h-9.965c-0.551 0-0.998 0.445-1 0.997l-0.031 9.989h-4.989v-15.777c0-0.082-0.013-0.162-0.032-0.239l11.055-11.52 10.982 11.507c-0.021 0.081-0.036 0.165-0.036 0.252z"
+                                ></path>
+                            </g>
+                        </svg>
+                        <span class="link hide">Reports</span>
+                        <span class="tooltip__content">Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#industries" title="Industries" class="tooltip">
+                        <svg
+                            fill="#000000"
+                            viewBox="0 0 32 32"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M31.772 16.043l-15.012-15.724c-0.189-0.197-0.449-0.307-0.721-0.307s-0.533 0.111-0.722 0.307l-15.089 15.724c-0.383 0.398-0.369 1.031 0.029 1.414 0.399 0.382 1.031 0.371 1.414-0.029l1.344-1.401v14.963c0 0.552 0.448 1 1 1h6.986c0.551 0 0.998-0.445 1-0.997l0.031-9.989h7.969v9.986c0 0.552 0.448 1 1 1h6.983c0.552 0 1-0.448 1-1v-14.968l1.343 1.407c0.197 0.204 0.459 0.308 0.722 0.308 0.249 0 0.499-0.092 0.692-0.279 0.398-0.382 0.411-1.015 0.029-1.413zM26.985 14.213v15.776h-4.983v-9.986c0-0.552-0.448-1-1-1h-9.965c-0.551 0-0.998 0.445-1 0.997l-0.031 9.989h-4.989v-15.777c0-0.082-0.013-0.162-0.032-0.239l11.055-11.52 10.982 11.507c-0.021 0.081-0.036 0.165-0.036 0.252z"
+                                ></path>
+                            </g>
+                        </svg>
+                        <span class="link hide">Industries</span>
+                        <span class="tooltip__content">Industries</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#settings" title="Settings" class="tooltip">
+                        <svg
+                            fill="#000000"
+                            viewBox="0 0 32 32"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M31.772 16.043l-15.012-15.724c-0.189-0.197-0.449-0.307-0.721-0.307s-0.533 0.111-0.722 0.307l-15.089 15.724c-0.383 0.398-0.369 1.031 0.029 1.414 0.399 0.382 1.031 0.371 1.414-0.029l1.344-1.401v14.963c0 0.552 0.448 1 1 1h6.986c0.551 0 0.998-0.445 1-0.997l0.031-9.989h7.969v9.986c0 0.552 0.448 1 1 1h6.983c0.552 0 1-0.448 1-1v-14.968l1.343 1.407c0.197 0.204 0.459 0.308 0.722 0.308 0.249 0 0.499-0.092 0.692-0.279 0.398-0.382 0.411-1.015 0.029-1.413zM26.985 14.213v15.776h-4.983v-9.986c0-0.552-0.448-1-1-1h-9.965c-0.551 0-0.998 0.445-1 0.997l-0.031 9.989h-4.989v-15.777c0-0.082-0.013-0.162-0.032-0.239l11.055-11.52 10.982 11.507c-0.021 0.081-0.036 0.165-0.036 0.252z"
+                                ></path>
+                            </g>
+                        </svg>
+                        <span class="link hide">Settings</span>
+                        <span class="tooltip__content">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#notifications"
+                        title="Notifications"
+                        class="tooltip"
+                    >
+                        <svg
+                            fill="#000000"
+                            viewBox="0 0 32 32"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M31.772 16.043l-15.012-15.724c-0.189-0.197-0.449-0.307-0.721-0.307s-0.533 0.111-0.722 0.307l-15.089 15.724c-0.383 0.398-0.369 1.031 0.029 1.414 0.399 0.382 1.031 0.371 1.414-0.029l1.344-1.401v14.963c0 0.552 0.448 1 1 1h6.986c0.551 0 0.998-0.445 1-0.997l0.031-9.989h7.969v9.986c0 0.552 0.448 1 1 1h6.983c0.552 0 1-0.448 1-1v-14.968l1.343 1.407c0.197 0.204 0.459 0.308 0.722 0.308 0.249 0 0.499-0.092 0.692-0.279 0.398-0.382 0.411-1.015 0.029-1.413zM26.985 14.213v15.776h-4.983v-9.986c0-0.552-0.448-1-1-1h-9.965c-0.551 0-0.998 0.445-1 0.997l-0.031 9.989h-4.989v-15.777c0-0.082-0.013-0.162-0.032-0.239l11.055-11.52 10.982 11.507c-0.021 0.081-0.036 0.165-0.036 0.252z"
+                                ></path>
+                            </g>
+                        </svg>
+                        <span class="link hide">Notifications</span>
+                        <span class="tooltip__content">Notifications</span>
+                    </a>
+                </li>
             </ul>
         </div>
-        <div class="sidebar__action__wrapper">
+        <!-- <div class="sidebar__action__wrapper">
             <div class="sidebar__action">
                 <div class="progress-bar">
                     <div class="progress-bar__value">60%</div>
@@ -126,8 +236,8 @@
                 <p>You are already using 60% of your capacity.</p>
                 <button>Upgrade plan</button>
             </div>
-        </div>
-        <div class="sidebar-links bottom-links">
+        </div> -->
+        <!-- <div class="sidebar-links bottom-links">
             <ul>
                 <li>
                     <a href="#settings" title="Settings" class="tooltip">
@@ -166,9 +276,9 @@
                             <span class="slider"></span>
                         </label>
                     </div>
-                </li> -->
+                </li>
             </ul>
-        </div>
+        </div> -->
         <div class="sidebar__profile">
             <div class="avatar__wrapper">
                 <img
@@ -176,7 +286,6 @@
                     alt="Frontend Solutions"
                     class="avatar"
                 />
-                <div class="online__status"></div>
             </div>
             <section class="avatar__name hide">
                 <div class="user-name">Frontend Solutions</div>
